@@ -1,0 +1,74 @@
+﻿@model marafi1.Models.Company
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>حذف</h2>
+
+<h3>هل بالفعل تريد حذف هذا العنصر؟؟</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label>إسم الشركة</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name_comp)
+        </dd>
+
+        <dt>
+            <label>العنوان</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            <label>المدينة</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+
+        <dt>
+            <label>رقم الهاتف</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            <label>البريد الإلكترونى</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            <label>صفحة الويب</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.web_page)
+        </dd>
+
+    </dl>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="padding-top:30px;">
+            <input type="submit" value="حذف" class="btn btn-default" style="background-color:blue; color:white;" /> |
+            @Html.ActionLink("الرجوع إلى الخلف", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,81 @@
+﻿@model marafi1.Models.employee
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>حذف</h2>
+
+<h3>هل بالفعل تريد حذف هذا العنصر؟؟</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label>إسم الموظف</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name_emp)
+        </dd>
+
+        <dt>
+            <label>الإجازات</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.balance_vacations)
+        </dd>
+
+        <dt>
+            <label>المستهلك</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.consumer)
+        </dd>
+
+        <dt>
+            <label>الباقي</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.reminder)
+        </dd>
+
+        <dt>
+            <label>الراتب</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.salary)
+        </dd>
+
+        <dt>
+            <label>رقم الحساب</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.account_number)
+        </dd>
+
+        <dt>
+            <label>مدة العمل</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.Duration_emp)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="padding-top:40px;">
+            <input type="submit" value="حذف" class="btn btn-default" style="background-color:blue; color:white;" /> |
+            @Html.ActionLink("الرجوع إلى الخلف", "Index")
+        </div>
+    }
+</div>

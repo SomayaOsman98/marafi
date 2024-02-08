@@ -1,0 +1,208 @@
+D:\vs pro\Website\marafi1\marafi1\bin\ApplicationInsights.config
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\csc.exe
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\System.Collections.Immutable.dll
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\System.Reflection.Metadata.dll
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\vbc.exe
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe
+D:\vs pro\Website\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe.config
+D:\vs pro\Website\marafi1\marafi1\bin\marafi1.dll.config
+D:\vs pro\Website\marafi1\marafi1\bin\marafi1.dll
+D:\vs pro\Website\marafi1\marafi1\bin\marafi1.pdb
+D:\vs pro\Website\marafi1\marafi1\bin\EntityFramework.dll
+D:\vs pro\Website\marafi1\marafi1\bin\EntityFramework.SqlServer.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.Web.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.ApplicationInsights.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.Web.Infrastructure.dll
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Helpers.dll
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Mvc.dll
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Razor.dll
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Webpages.Deployment.dll
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Webpages.dll
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Webpages.Razor.dll
+D:\vs pro\Website\marafi1\marafi1\bin\EntityFramework.xml
+D:\vs pro\Website\marafi1\marafi1\bin\EntityFramework.SqlServer.xml
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.xml
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.Web.xml
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.xml
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.ApplicationInsights.xml
+D:\vs pro\Website\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Razor.xml
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Webpages.xml
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Webpages.Deployment.xml
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Webpages.Razor.xml
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Helpers.xml
+D:\vs pro\Website\marafi1\marafi1\bin\System.Web.Mvc.xml
+D:\vs pro\Website\marafi1\marafi1\obj\Debug\marafi1.csprojResolveAssemblyReference.cache
+D:\vs pro\Website\marafi1\marafi1\obj\Debug\marafi1.dll
+D:\vs pro\Website\marafi1\marafi1\obj\Debug\marafi1.pdb
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\ApplicationInsights.config
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\csc.exe
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\vbc.exe
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\marafi1.dll.config
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\marafi1.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\marafi1.pdb
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\EntityFramework.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\EntityFramework.SqlServer.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.Web.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Helpers.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Mvc.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Razor.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Webpages.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Webpages.Razor.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\EntityFramework.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\EntityFramework.SqlServer.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.Web.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Razor.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Webpages.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Webpages.Razor.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Helpers.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\bin\System.Web.Mvc.xml
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\obj\Debug\marafi1.csprojResolveAssemblyReference.cache
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\obj\Debug\marafi1.dll
+C:\Users\MY-NAME\Downloads\marafi1\marafi1\obj\Debug\marafi1.pdb
+F:\marafi1\marafi1\bin\ApplicationInsights.config
+F:\marafi1\marafi1\bin\roslyn\csc.exe
+F:\marafi1\marafi1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\marafi1\marafi1\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\marafi1\marafi1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\marafi1\marafi1\bin\roslyn\System.Collections.Immutable.dll
+F:\marafi1\marafi1\bin\roslyn\System.Reflection.Metadata.dll
+F:\marafi1\marafi1\bin\roslyn\vbc.exe
+F:\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe
+F:\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe.config
+F:\marafi1\marafi1\bin\marafi1.dll.config
+F:\marafi1\marafi1\bin\marafi1.dll
+F:\marafi1\marafi1\bin\marafi1.pdb
+F:\marafi1\marafi1\bin\EntityFramework.dll
+F:\marafi1\marafi1\bin\EntityFramework.SqlServer.dll
+F:\marafi1\marafi1\bin\Microsoft.AI.Agent.Intercept.dll
+F:\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.dll
+F:\marafi1\marafi1\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\marafi1\marafi1\bin\Microsoft.AI.Web.dll
+F:\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.dll
+F:\marafi1\marafi1\bin\Microsoft.ApplicationInsights.dll
+F:\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\marafi1\marafi1\bin\Microsoft.Web.Infrastructure.dll
+F:\marafi1\marafi1\bin\System.Web.Helpers.dll
+F:\marafi1\marafi1\bin\System.Web.Mvc.dll
+F:\marafi1\marafi1\bin\System.Web.Razor.dll
+F:\marafi1\marafi1\bin\System.Web.Webpages.Deployment.dll
+F:\marafi1\marafi1\bin\System.Web.Webpages.dll
+F:\marafi1\marafi1\bin\System.Web.Webpages.Razor.dll
+F:\marafi1\marafi1\bin\EntityFramework.xml
+F:\marafi1\marafi1\bin\EntityFramework.SqlServer.xml
+F:\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.xml
+F:\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\marafi1\marafi1\bin\Microsoft.AI.Web.xml
+F:\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.xml
+F:\marafi1\marafi1\bin\Microsoft.ApplicationInsights.xml
+F:\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\marafi1\marafi1\bin\System.Web.Razor.xml
+F:\marafi1\marafi1\bin\System.Web.Webpages.xml
+F:\marafi1\marafi1\bin\System.Web.Webpages.Deployment.xml
+F:\marafi1\marafi1\bin\System.Web.Webpages.Razor.xml
+F:\marafi1\marafi1\bin\System.Web.Helpers.xml
+F:\marafi1\marafi1\bin\System.Web.Mvc.xml
+F:\marafi1\marafi1\obj\Debug\marafi1.csprojResolveAssemblyReference.cache
+F:\marafi1\marafi1\obj\Debug\marafi1.dll
+F:\marafi1\marafi1\obj\Debug\marafi1.pdb
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\ApplicationInsights.config
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\csc.exe
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\vbc.exe
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\marafi1.dll.config
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\marafi1.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\marafi1.pdb
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\EntityFramework.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.Web.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.ApplicationInsights.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Newtonsoft.Json.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Helpers.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Http.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Mvc.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Razor.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Webpages.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Webpages.Razor.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\EntityFramework.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.Web.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.ApplicationInsights.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\Newtonsoft.Json.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Http.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Razor.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Webpages.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Webpages.Razor.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Helpers.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\bin\System.Web.Mvc.xml
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\obj\Debug\marafi1.dll
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\obj\Debug\marafi1.pdb
+C:\Users\PC\Documents\Visual Studio 2015\Projects\marafi1\marafi1\obj\Debug\marafi1.csprojResolveAssemblyReference.cache

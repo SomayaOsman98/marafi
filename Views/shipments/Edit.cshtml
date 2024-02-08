@@ -1,0 +1,98 @@
+﻿@model marafi1.Models.shipment
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>تعديل</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_ship)
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">رقم المستلم</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.phone_recip, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.phone_recip, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">المدينة</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.city_address, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.city_address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">المنطقة</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.region, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.region, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">نوع الشحنة</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.shipment_cont, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.shipment_cont, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">الكمية</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">سعر الشحنة</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.ship_price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ship_price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;"> إسم المستلم</div>
+            <div class="col-md-6">
+                @Html.DropDownList("ID_man", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ID_man, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">نوع الشحن</div>
+            <div class="col-md-6">
+                @Html.DropDownList("ID_charging", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ID_charging, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" style="background-color:blue; color:white;" />
+            </div>
+        </div>
+    </div>
+}
+
+<div dir="ltr" style="margin-left:240px;">
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

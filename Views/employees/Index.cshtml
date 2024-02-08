@@ -1,0 +1,89 @@
+﻿@model IEnumerable<marafi1.Models.employee>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<p style="font-size:20px;">
+    @Html.ActionLink("إضافة جديد", "Create")
+</p>
+    <br />
+    @using (Html.BeginForm())
+    {
+        <form method="post" action="~/Views/employees/Index.cshtml">
+       <input type="text" name="Duration_emp" value="" />
+        <input type="submit" value="بحث" class="btn btn-primary" style="margin-right:28px;" />
+            </form>
+    }
+    <br />
+  <table class="table">
+      <thead>
+             <tr>
+        <th>
+            <label>إسم الموظف</label>
+        </th>
+        <th>
+            <label>الإجازات</label>
+        </th>
+        <th>
+            <label>المستهلك</label>
+        </th>
+        <th>
+            <label>الباقي</label>
+        </th>
+        <th>
+            <label>الراتب</label>
+        </th>
+        <th>
+            <label>رقم الحساب</label>
+        </th>
+        <th>
+            <label>مدة العمل</label>
+        </th>
+        <th></th>
+    </tr>
+      </thead>
+      <tbody>
+          @if (Model.Count() == 0)
+          {
+              <tr>
+                  <td colspan="2" style="color:red; font-size:18px;">لاتطابق أي سجل.</td>
+              </tr>
+          }
+          else
+          {
+              foreach (var item in Model)
+              {
+                  <tr>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.name_emp)
+                      </td>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.balance_vacations)
+                      </td>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.consumer)
+                      </td>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.reminder)
+                      </td>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.salary)
+                      </td>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.account_number)
+                      </td>
+                      <td>
+                          @Html.DisplayFor(modelItem => item.Duration_emp)
+                      </td>
+                      <td>
+                          @Html.ActionLink("تعديل", "Edit", new { id = item.ID_employee }) |
+                          @Html.ActionLink("تفاصيل", "Details", new { id = item.ID_employee }) |
+                          @Html.ActionLink("حذف", "Delete", new { id = item.ID_employee })
+                      </td>
+                  </tr>
+              }
+          }
+              </tbody>
+</table>

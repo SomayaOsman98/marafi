@@ -1,0 +1,64 @@
+﻿@model IEnumerable<marafi1.Models.clients>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<p style="font-size:20px;">
+    @Html.ActionLink("إضافة جديد", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <label>إسم الشركة</label>
+        </th>
+        <th>
+            <label>الإسم</label>
+        </th>
+       
+        <th>
+            <label>العنوان</label>
+        </th>
+        <th>
+            <label>قيمة الشحنة</label>
+        </th>
+        <th>
+            <label>رقم الهاتف</label>
+        </th>
+        <th>
+            <label>المرسل</label>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Company.name_comp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.value)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sender)
+            </td>
+            <td>
+                @Html.ActionLink("تعديل", "Edit", new { id = item.ID_man }) |
+                @Html.ActionLink("تفاصيل", "Details", new { id = item.ID_man }) |
+                @Html.ActionLink("حذف", "Delete", new { id = item.ID_man })
+            </td>
+        </tr>
+    }
+
+</table>

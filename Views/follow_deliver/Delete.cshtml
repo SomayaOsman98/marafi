@@ -1,0 +1,73 @@
+﻿@model marafi1.Models.follow_deliver
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>حذف</h2>
+
+<h3>هل بالفعل تريد حذف هذا العنصر؟؟</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            <label>كمية الشحنة</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.quantity_charg)
+        </dd>
+
+        <dt>
+            <label>نوع الشحنة</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.type_charging)
+        </dd>
+
+        <dt>
+            <label>قادمة من</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.coming_from)
+        </dd>
+
+        <dt>
+            <label>تاريخ الشحن</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.date)
+        </dd>
+
+        <dt>
+            <label>المرسل</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.sender)
+        </dd>
+
+        <dt>
+            <label>المستلم</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.recip)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color" style="padding-top:40px;">
+            <input type="submit" value="حذف" class="btn btn-default" style="background-color:blue; color:white;" /> |
+            @Html.ActionLink("الرجوع إلى الخلف", "Index")
+        </div>
+    }
+</div>

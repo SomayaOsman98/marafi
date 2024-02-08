@@ -1,0 +1,83 @@
+﻿@model marafi1.Models.shipment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>تفاصيل</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label>نوع الشحن</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.charging.name_charg)
+        </dd>
+
+        <dt>
+            <label>الإسم</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.clients.name)
+        </dd>
+
+        <dt>
+            <label>رقم المستلم</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.phone_recip)
+        </dd>
+
+        <dt>
+            <label>المدينة</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.city_address)
+        </dd>
+
+        <dt>
+            <label>المنطقة</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.region)
+        </dd>
+
+        <dt>
+            <label>نوع الشحنة</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.shipment_cont)
+        </dd>
+
+        <dt>
+            <label>الكمية</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+
+        <dt>
+            <label>سعر الشحنة</label>
+        </dt>
+
+        <dd style="padding-top:5px;">
+            @Html.DisplayFor(model => model.ship_price)
+        </dd>
+
+    </dl>
+</div>
+<p style="padding-top:30px;">
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.ID_ship }) |
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</p>
+

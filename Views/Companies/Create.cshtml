@@ -1,0 +1,73 @@
+﻿@model marafi1.Models.Company
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+<h2>الإضافة</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+ 
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">إسم الشركة</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.name_comp, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.name_comp, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">العنوان</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">المدينة</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.city, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">رقم الهاتف</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">البريد الإلكترونى</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">صفحة الويب</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.web_page, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.web_page, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="إضافة" class="btn btn-default" style="background-color:blue; color:white;" id="btnadd" />
+            </div>
+        </div>
+    </div>
+}
+<div dir="ltr" style="margin-left:240px;">
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</div>

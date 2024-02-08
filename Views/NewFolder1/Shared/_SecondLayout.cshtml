@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Sliding-enabled slideshow using jQuery demo - Script Tutorials">
+    <script src="~/content/jquery.localScroll.js"></script>
+    <script src="~/content/jquery-scrollTo.js"></script>
+    <script src="~/content/jquery.js"></script>
+    <link href="~/content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/content/Style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="~/content/slides.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body style="margin-right:-50px;">
+    <div class="container" dir="ltr" style="margin-top:-180px; ">
+        <div class="navbar-header" dir="ltr">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="~/Images/marafilogo.png" height="60" width="250" />
+            </a>
+        </div>
+        <div style="margin-top:120px;">
+            @RenderBody()
+        </div>
+</body>
+</html>

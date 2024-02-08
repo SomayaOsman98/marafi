@@ -1,0 +1,190 @@
+﻿<h2>الإضافة</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;" id="idman">رقم العميل</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.ID_man, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ID_man, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">الإسم</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <script>
+            function EnableDisabletextbox()
+            {
+                var PYes = document.getElementById("Yes");
+                var PNo = document.getElementById("No");
+                var txtbox = document.getElementById("txtbox");
+                var address = document.getElementById("address");
+                var phone = document.getElementById("phone");
+                var sender = document.getElementById("sender");
+                var MyId = document.getElementById("MyId");
+                address.disabled = PYes.checked ? false : true;
+                phone.disabled = PYes.checked ? false : true;
+                MyId.disabled = PNo.checked ? false : true;
+                if (PYes.checked == true)
+                {
+                    address.focus();
+                    phone.focus();
+                  
+                } else if (PNo.checked == true)
+                {
+
+                    MyId.focus();
+                    phone.focus();
+                    sender.focus();
+                  
+                }
+            }
+        </script>
+      
+        @*<script type="text/javascript">
+            $(document).ready(function () {
+                $("#MyId").val(0);
+                $("#MyId").change(function () {
+                    var itemId = $("#MyId").val();
+                    GetItemUnitPrice(itemId);
+                });
+
+                $("btnadd").click(function () {
+                    AddToTheItemList();
+                });
+            });
+            function AddToTheItemList() {
+                var tbl = $("#tbl");
+                var phone = $("#phone").val();
+                var address = $("#address").val();
+                var sender = $("#sender").val();
+                var value = $("#txtbox").val();
+                var ItemId = $("#idman").val();
+                var Itemname = $("#ID_comp option:selected").text();
+
+                
+            }
+            function GetItemUnitPrice(itemId) {
+                $.ajax({
+                    async: true,
+                    type: 'GET',
+                    dataType: 'JSON',
+                    contentType: 'application/json; charset=utf-8',
+                    url: '/clients/getItemUnitPrice',
+                    success:function(data)
+                    {
+                        $("#address").val(parseFloat(data).toFixed("misurata"));
+
+                    },
+                    error: function () {
+                        alert("There is some problem to get the unit Price.")
+                    }
+
+                });
+            }
+        </script>*@
+
+        <script>
+          
+            $('select#MyId').change(function () {
+                var drop_down_id = $(this).val();
+                var Url = 'http://localhost:31011/clients/Create'
+            });
+            $.ajax({
+                url: URL,
+                success: function (result) {
+                    $('input#MyId').val(result.MyId);
+                    $('select#address').val(result.address);
+                    $('select#phone').val(result.phone);              
+                },
+                error:function(error)
+                {
+                    alert(errors);
+                }
+            });
+
+        </script>
+        
+
+        <div class="form-group">
+            <div class="col-md-2"></div>
+            <div class="col-md-6" style="font-size:18px;">
+                <label >
+               <input type="radio" id="Yes" name="Private"  onclick="EnableDisabletextbox()" />&nbsp; خاص
+                    </label>
+                <label  style="padding-right:20px;">
+                    <input type="radio" id="No" name="Private" checked="checked" onclick="EnableDisabletextbox()" />&nbsp;شركة 
+                </label>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">إسم الشركة</div>
+            <div class="col-md-6" id="drop">                
+                @Html.DropDownList("ID_comp", null, htmlAttributes: new { @class = "form-control", @id = "MyId" })
+                @Html.ValidationMessageFor(model => model.ID_comp, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">العنوان</div>
+            <div class="col-md-6">
+                @*<input type="text" id="address" disabled="disabled" />*@
+                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control",disabled="disabled",@id="address" } })
+                @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">قيمة الشحن</div>
+            <div class="col-md-6">
+                @*<input type="text" id="txtbox" disabled="disabled"/>*@
+                @Html.EditorFor(model => model.value, new { htmlAttributes = new { @class = "form-control",id="txtbox" } })
+    @Html.ValidationMessageFor(model => model.value, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">رقم الهاتف</div>
+            <div class="col-md-6">
+                @*<input type="text" id="phone" disabled="disabled" />*@
+                @Html.EditorFor(model => model.phone, new { htmlAttributes = new { @class = "form-control",disabled="disabled",id="phone" } })
+    @Html.ValidationMessageFor(model => model.phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">المرسل</div>
+            <div class="col-md-6">
+                @*<input type="text" id="sender" disabled="disabled" />*@
+                @Html.EditorFor(model => model.sender, new { htmlAttributes = new { @class = "form-control", id="sender"} })
+    @Html.ValidationMessageFor(model => model.sender, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+         
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="إضافة" onclick="btnclick()" class="btn btn-default" style="background-color:blue; color:white;" id="btnadd" />
+            </div>
+        </div>
+    </div>
+}
+<div dir="ltr" style="margin-left:240px;">
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

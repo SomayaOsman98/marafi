@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="marafiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id_admin" />
+    </Key>
+    <Property Name="Id_admin" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="Int32" />
+  </EntityType>
+  <EntityType Name="charging">
+    <Key>
+      <PropertyRef Name="Id_charging" />
+    </Key>
+    <Property Name="Id_charging" Type="Int32" Nullable="false" />
+    <Property Name="name_charg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="shipment" Relationship="Self.FK_shipment_charging" FromRole="charging" ToRole="shipment" />
+  </EntityType>
+  <EntityType Name="clients">
+    <Key>
+      <PropertyRef Name="ID_man" />
+    </Key>
+    <Property Name="ID_man" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="value" Type="Int32" />
+    <Property Name="phone" Type="Int32" />
+    <Property Name="sender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ID_comp" Type="Int32" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_clients_Company" FromRole="clients" ToRole="Company" />
+    <NavigationProperty Name="shipment" Relationship="Self.FK_shipment_clients" FromRole="clients" ToRole="shipment" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="ID_comp" />
+    </Key>
+    <Property Name="ID_comp" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_comp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="web_page" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="clients" Relationship="Self.FK_clients_Company" FromRole="Company" ToRole="clients" />
+  </EntityType>
+  <EntityType Name="content">
+    <Key>
+      <PropertyRef Name="Id_cont" />
+    </Key>
+    <Property Name="Id_cont" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_cont" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EMB">
+    <Key>
+      <PropertyRef Name="ID_employee" />
+    </Key>
+    <Property Name="ID_employee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_emp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="balance_vacations" Type="Int32" />
+    <Property Name="consumer" Type="Int32" />
+    <Property Name="reminder" Type="Int32" />
+    <Property Name="salary" Type="Int32" />
+    <Property Name="account_number" Type="Int32" />
+    <Property Name="Duration_emp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="ID_employee" />
+    </Key>
+    <Property Name="ID_employee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_emp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="balance_vacations" Type="Int32" />
+    <Property Name="consumer" Type="Int32" />
+    <Property Name="reminder" Type="Int32" />
+    <Property Name="salary" Type="Int32" />
+    <Property Name="account_number" Type="Int32" />
+    <Property Name="Duration_emp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="follow_deliver">
+    <Key>
+      <PropertyRef Name="Id_charging" />
+    </Key>
+    <Property Name="Id_charging" Type="Int32" Nullable="false" />
+    <Property Name="name_chg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity_charg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type_charging" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="coming_from" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <Property Name="sender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="recip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="new">
+    <Key>
+      <PropertyRef Name="Id_new" />
+    </Key>
+    <Property Name="Id_new" Type="Int32" Nullable="false" />
+    <Property Name="name_new" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="shipment">
+    <Key>
+      <PropertyRef Name="ID_ship" />
+    </Key>
+    <Property Name="ID_ship" Type="Int32" Nullable="false" />
+    <Property Name="name_recip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_recip" Type="Int32" />
+    <Property Name="city_address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="shipment_cont" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="ship_price" Type="Int32" />
+    <Property Name="ID_man" Type="Int32" />
+    <Property Name="ID_charging" Type="Int32" />
+    <NavigationProperty Name="charging" Relationship="Self.FK_shipment_charging" FromRole="shipment" ToRole="charging" />
+    <NavigationProperty Name="clients" Relationship="Self.FK_shipment_clients" FromRole="shipment" ToRole="clients" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id_new" />
+    </Key>
+    <Property Name="Id_new" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_shipment_charging">
+    <End Role="charging" Type="Self.charging" Multiplicity="0..1" />
+    <End Role="shipment" Type="Self.shipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="charging">
+        <PropertyRef Name="Id_charging" />
+      </Principal>
+      <Dependent Role="shipment">
+        <PropertyRef Name="ID_charging" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_clients_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="clients" Type="Self.clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID_comp" />
+      </Principal>
+      <Dependent Role="clients">
+        <PropertyRef Name="ID_comp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_shipment_clients">
+    <End Role="clients" Type="Self.clients" Multiplicity="0..1" />
+    <End Role="shipment" Type="Self.shipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="ID_man" />
+      </Principal>
+      <Dependent Role="shipment">
+        <PropertyRef Name="ID_man" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="marafiEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admin" EntityType="Self.Admin" />
+    <EntitySet Name="charging" EntityType="Self.charging" />
+    <EntitySet Name="clients" EntityType="Self.clients" />
+    <EntitySet Name="Company" EntityType="Self.Company" />
+    <EntitySet Name="content" EntityType="Self.content" />
+    <EntitySet Name="EMB" EntityType="Self.EMB" />
+    <EntitySet Name="employee" EntityType="Self.employee" />
+    <EntitySet Name="follow_deliver" EntityType="Self.follow_deliver" />
+    <EntitySet Name="new" EntityType="Self.new" />
+    <EntitySet Name="shipment" EntityType="Self.shipment" />
+    <EntitySet Name="Table" EntityType="Self.Table" />
+    <AssociationSet Name="FK_shipment_charging" Association="Self.FK_shipment_charging">
+      <End Role="charging" EntitySet="charging" />
+      <End Role="shipment" EntitySet="shipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_clients_Company" Association="Self.FK_clients_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="clients" EntitySet="clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_shipment_clients" Association="Self.FK_shipment_clients">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="shipment" EntitySet="shipment" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

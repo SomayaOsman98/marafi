@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="marafiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id_admin" />
+    </Key>
+    <Property Name="Id_admin" Type="int" Nullable="false" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="int" />
+  </EntityType>
+  <EntityType Name="charging">
+    <Key>
+      <PropertyRef Name="Id_charging" />
+    </Key>
+    <Property Name="Id_charging" Type="int" Nullable="false" />
+    <Property Name="name_charg" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="clients">
+    <Key>
+      <PropertyRef Name="ID_man" />
+    </Key>
+    <Property Name="ID_man" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" />
+    <Property Name="value" Type="int" />
+    <Property Name="phone" Type="int" />
+    <Property Name="sender" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_comp" Type="int" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="ID_comp" />
+    </Key>
+    <Property Name="ID_comp" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_comp" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone" Type="int" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="web_page" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="content">
+    <Key>
+      <PropertyRef Name="Id_cont" />
+    </Key>
+    <Property Name="Id_cont" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_cont" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EMB">
+    <Key>
+      <PropertyRef Name="ID_employee" />
+    </Key>
+    <Property Name="ID_employee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_emp" Type="nvarchar" MaxLength="50" />
+    <Property Name="balance_vacations" Type="int" />
+    <Property Name="consumer" Type="int" />
+    <Property Name="reminder" Type="int" />
+    <Property Name="salary" Type="int" />
+    <Property Name="account_number" Type="int" />
+    <Property Name="Duration_emp" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="ID_employee" />
+    </Key>
+    <Property Name="ID_employee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_emp" Type="nvarchar" MaxLength="50" />
+    <Property Name="balance_vacations" Type="int" />
+    <Property Name="consumer" Type="int" />
+    <Property Name="reminder" Type="int" />
+    <Property Name="salary" Type="int" />
+    <Property Name="account_number" Type="int" />
+    <Property Name="Duration_emp" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="follow_deliver">
+    <Key>
+      <PropertyRef Name="Id_charging" />
+    </Key>
+    <Property Name="Id_charging" Type="int" Nullable="false" />
+    <Property Name="name_chg" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity_charg" Type="nvarchar" MaxLength="50" />
+    <Property Name="type_charging" Type="nvarchar" MaxLength="50" />
+    <Property Name="coming_from" Type="nvarchar" MaxLength="50" />
+    <Property Name="date" Type="date" />
+    <Property Name="sender" Type="nvarchar" MaxLength="50" />
+    <Property Name="recip" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="new">
+    <Key>
+      <PropertyRef Name="Id_new" />
+    </Key>
+    <Property Name="Id_new" Type="int" Nullable="false" />
+    <Property Name="name_new" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="shipment">
+    <Key>
+      <PropertyRef Name="ID_ship" />
+    </Key>
+    <Property Name="ID_ship" Type="int" Nullable="false" />
+    <Property Name="name_recip" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone_recip" Type="int" />
+    <Property Name="city_address" Type="nvarchar" MaxLength="50" />
+    <Property Name="region" Type="nvarchar" MaxLength="50" />
+    <Property Name="shipment_cont" Type="nvarchar" MaxLength="50" />
+    <Property Name="quantity" Type="int" />
+    <Property Name="ship_price" Type="int" />
+    <Property Name="ID_man" Type="int" />
+    <Property Name="ID_charging" Type="int" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id_new" />
+    </Key>
+    <Property Name="Id_new" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_clients_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="clients" Type="Self.clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID_comp" />
+      </Principal>
+      <Dependent Role="clients">
+        <PropertyRef Name="ID_comp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_shipment_charging">
+    <End Role="charging" Type="Self.charging" Multiplicity="0..1" />
+    <End Role="shipment" Type="Self.shipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="charging">
+        <PropertyRef Name="Id_charging" />
+      </Principal>
+      <Dependent Role="shipment">
+        <PropertyRef Name="ID_charging" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_shipment_clients">
+    <End Role="clients" Type="Self.clients" Multiplicity="0..1" />
+    <End Role="shipment" Type="Self.shipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clients">
+        <PropertyRef Name="ID_man" />
+      </Principal>
+      <Dependent Role="shipment">
+        <PropertyRef Name="ID_man" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="marafiModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="charging" EntityType="Self.charging" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="clients" EntityType="Self.clients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="content" EntityType="Self.content" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMB" EntityType="Self.EMB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="follow_deliver" EntityType="Self.follow_deliver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="new" EntityType="Self.new" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="shipment" EntityType="Self.shipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_clients_Company" Association="Self.FK_clients_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="clients" EntitySet="clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_shipment_charging" Association="Self.FK_shipment_charging">
+      <End Role="charging" EntitySet="charging" />
+      <End Role="shipment" EntitySet="shipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_shipment_clients" Association="Self.FK_shipment_clients">
+      <End Role="clients" EntitySet="clients" />
+      <End Role="shipment" EntitySet="shipment" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="marafiModelStoreContainer" CdmEntityContainer="marafiEntities1">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="marafiModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Id_admin" ColumnName="Id_admin" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="charging">
+      <EntityTypeMapping TypeName="marafiModel.charging">
+        <MappingFragment StoreEntitySet="charging">
+          <ScalarProperty Name="Id_charging" ColumnName="Id_charging" />
+          <ScalarProperty Name="name_charg" ColumnName="name_charg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clients">
+      <EntityTypeMapping TypeName="marafiModel.clients">
+        <MappingFragment StoreEntitySet="clients">
+          <ScalarProperty Name="ID_man" ColumnName="ID_man" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="sender" ColumnName="sender" />
+          <ScalarProperty Name="ID_comp" ColumnName="ID_comp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="marafiModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="ID_comp" ColumnName="ID_comp" />
+          <ScalarProperty Name="name_comp" ColumnName="name_comp" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="web_page" ColumnName="web_page" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="content">
+      <EntityTypeMapping TypeName="marafiModel.content">
+        <MappingFragment StoreEntitySet="content">
+          <ScalarProperty Name="Id_cont" ColumnName="Id_cont" />
+          <ScalarProperty Name="name_cont" ColumnName="name_cont" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMB">
+      <EntityTypeMapping TypeName="marafiModel.EMB">
+        <MappingFragment StoreEntitySet="EMB">
+          <ScalarProperty Name="ID_employee" ColumnName="ID_employee" />
+          <ScalarProperty Name="name_emp" ColumnName="name_emp" />
+          <ScalarProperty Name="balance_vacations" ColumnName="balance_vacations" />
+          <ScalarProperty Name="consumer" ColumnName="consumer" />
+          <ScalarProperty Name="reminder" ColumnName="reminder" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="account_number" ColumnName="account_number" />
+          <ScalarProperty Name="Duration_emp" ColumnName="Duration_emp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employee">
+      <EntityTypeMapping TypeName="marafiModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="ID_employee" ColumnName="ID_employee" />
+          <ScalarProperty Name="name_emp" ColumnName="name_emp" />
+          <ScalarProperty Name="balance_vacations" ColumnName="balance_vacations" />
+          <ScalarProperty Name="consumer" ColumnName="consumer" />
+          <ScalarProperty Name="reminder" ColumnName="reminder" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="account_number" ColumnName="account_number" />
+          <ScalarProperty Name="Duration_emp" ColumnName="Duration_emp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="follow_deliver">
+      <EntityTypeMapping TypeName="marafiModel.follow_deliver">
+        <MappingFragment StoreEntitySet="follow_deliver">
+          <ScalarProperty Name="Id_charging" ColumnName="Id_charging" />
+          <ScalarProperty Name="name_chg" ColumnName="name_chg" />
+          <ScalarProperty Name="quantity_charg" ColumnName="quantity_charg" />
+          <ScalarProperty Name="type_charging" ColumnName="type_charging" />
+          <ScalarProperty Name="coming_from" ColumnName="coming_from" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="sender" ColumnName="sender" />
+          <ScalarProperty Name="recip" ColumnName="recip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="new">
+      <EntityTypeMapping TypeName="marafiModel.new">
+        <MappingFragment StoreEntitySet="new">
+          <ScalarProperty Name="Id_new" ColumnName="Id_new" />
+          <ScalarProperty Name="name_new" ColumnName="name_new" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="shipment">
+      <EntityTypeMapping TypeName="marafiModel.shipment">
+        <MappingFragment StoreEntitySet="shipment">
+          <ScalarProperty Name="ID_ship" ColumnName="ID_ship" />
+          <ScalarProperty Name="name_recip" ColumnName="name_recip" />
+          <ScalarProperty Name="phone_recip" ColumnName="phone_recip" />
+          <ScalarProperty Name="city_address" ColumnName="city_address" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="shipment_cont" ColumnName="shipment_cont" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="ship_price" ColumnName="ship_price" />
+          <ScalarProperty Name="ID_man" ColumnName="ID_man" />
+          <ScalarProperty Name="ID_charging" ColumnName="ID_charging" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="marafiModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Id_new" ColumnName="Id_new" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

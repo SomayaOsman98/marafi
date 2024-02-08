@@ -1,0 +1,90 @@
+﻿@model marafi1.Models.employee
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>تعديل</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_employee)
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">إسم الموظف</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.name_emp, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.name_emp, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">الإجازات</div>
+                <div class="col-md-6">
+                @Html.EditorFor(model => model.balance_vacations, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.balance_vacations, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">المستهلك</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.consumer, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.consumer, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">الباقي</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.reminder, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.reminder, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">الراتب</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.salary, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.salary, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;"> رقم الحساب</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.account_number, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.account_number, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">مدة العمل</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Duration_emp, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Duration_emp, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="حفظ" class="btn btn-default" style="background-color:blue; color:white;" />
+            </div>
+        </div>
+    </div>
+}
+
+<div dir="ltr" style="margin-left:240px;">
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<marafi1.Models.charging>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+
+<p style="font-size:20px;">
+    @Html.ActionLink("إضافة جديد", "Create")
+</p>
+<table class="table" >
+    <tr>
+        <th>
+           <h5 style="font-weight:bold;">رقم الشحن</h5>
+        </th>
+        <th>
+            <h5 style="font-weight:bold;">نوع الشحن</h5>
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_charging)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name_charg)
+        </td>
+        <td>
+            @Html.ActionLink("تعديل", "Edit", new { id=item.Id_charging }) |
+            @Html.ActionLink("تفاصيل", "Details", new { id=item.Id_charging }) |
+            @Html.ActionLink("حذف", "Delete", new { id=item.Id_charging })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+        <meta name="description" content="Sliding-enabled slideshow using jQuery demo - Script Tutorials">
+        <script src="~/content/jquery.localScroll.js"></script>
+        <script src="~/content/jquery-scrollTo.js"></script>
+        <script src="~/content/jquery.js"></script>
+        <link href="~/content/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/content/Style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="~/content/slides.js"></script>
+
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" dir="ltr">
+        <div class="container" dir="ltr">
+            <div class="navbar-header" dir="ltr">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="~/Images/marafilogo.png" height="60" width="250" />
+                </a>
+            </div>
+
+
+            <div id="navbar" class="navbar-collapse collapse" dir="ltr" style="padding-right:260px; padding-top:-40px;">
+
+
+                <ul class="nav navbar-nav" style="padding-top:20px;"  >
+                    <li style="padding-right:850px;  margin-top:-30px;  text-decoration:underline;">@Html.ActionLink(" خروج", "Index", "test")</li>
+                    <li>@Html.ActionLink("إدارة بيانات الشركات", "Index", "Companies")</li>
+                    <li>@Html.ActionLink("إدارة بيانات الموظفين ", "Index", "employees")</li>
+                    <li> @Html.ActionLink("متابعة إستلام الشحنات ", "Index", "shipments")</li>
+                    <li> @Html.ActionLink("إدارة بيانات العملاء", "Index", "clients")</li>
+                    <li> @Html.ActionLink("إدارة بيانات التوصيل", "Index", "follow_deliver")</li>
+                    <li> @Html.ActionLink("إدارة بيانات نوع الشحن", "Index", "chargings")</li>
+                   
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

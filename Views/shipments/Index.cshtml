@@ -1,0 +1,76 @@
+﻿@model IEnumerable<marafi1.Models.shipment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+
+<p style="font-size:20px;">
+    @Html.ActionLink("إضافة جديد", "Create")
+</p>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            <label>نوع الشحن</label>
+        </th>
+        <th>
+            <label>الإسم</label>
+        </th>
+        <th>
+            <label>رقم المستلم</label>
+        </th>
+        <th>
+            <label>المدينة</label>
+        </th>
+        <th>
+            <label>المنطقة</label>
+        </th>
+        <th>
+            <label>نوع الشحنة</label>
+        </th>
+        <th>
+            <label>الكمية</label>
+        </th>
+        <th>
+            <label>سعر الشحنة</label>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.charging.name_charg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clients.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone_recip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.city_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shipment_cont)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ship_price)
+        </td>
+        <td>
+            @Html.ActionLink("تعديل", "Edit", new { id=item.ID_ship }) |
+            @Html.ActionLink("تفاصيل", "Details", new { id=item.ID_ship }) |
+            @Html.ActionLink("حذف", "Delete", new { id=item.ID_ship })
+        </td>
+    </tr>
+}
+
+</table>

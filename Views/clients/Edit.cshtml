@@ -1,0 +1,82 @@
+﻿@model marafi1.Models.clients
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>تعديل</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID_man)
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">الإسم</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">العنوان</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">قيمة الشحن</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.value, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.value, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">رقم الهاتف</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">المرسل</div>
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.sender, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.sender, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-2" style="direction:ltr; font-size:18px;">إسم الشركة</div>
+            <div class="col-md-6">
+                @Html.DropDownList("ID_comp", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ID_comp, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-6">
+                <input type="submit" value="حفظ" class="btn btn-default" style="background-color:blue; color:white;" />
+            </div>
+        </div>
+    </div>
+}
+
+<div dir="ltr" style="margin-left:240px;">
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

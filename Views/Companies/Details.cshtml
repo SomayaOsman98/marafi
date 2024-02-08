@@ -1,0 +1,66 @@
+﻿@model marafi1.Models.Company
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/NewFolder1/Shared/_ThirdLayout.cshtml";
+}
+
+<h2>تفاصيل</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label>إسم الشركة</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name_comp)
+        </dd>
+
+        <dt>
+            <label>العنوان</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            <label>المدينة</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+
+        <dt>
+            <label>رقم الهاتف</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            <label>البريد الإلكترونى</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            <label>صفحة الويب</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.web_page)
+        </dd>
+
+    </dl>
+</div>
+<p style="padding-top:30px;">
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.ID_comp }) |
+    @Html.ActionLink("الرجوع إلى الخلف", "Index")
+</p>

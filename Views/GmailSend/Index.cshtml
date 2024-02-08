@@ -1,0 +1,95 @@
+﻿@model marafi1.Models.EmailClass
+
+@{
+    ViewBag.Title = "Send Mail To Gmail Account";
+    Layout = "~/Views/NewFolder1/Shared/_MainLayout.cshtml";
+}
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+
+
+
+    <div style="margin-right:-200px;">
+        @using (Html.BeginForm("Index", "GmailSend", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div style="direction:rtl; padding-top:40px;  color:whitesmoke; background-color:cadetblue; border-radius:40px; padding-bottom:20px;margin-bottom:40px; margin-right:350px; margin-left:350px;">
+                <h5 style=" font-size:20px; text-align:center; margin-right:-20px; margin-top:40px; ">
+                    <b style="font-size:30px;">راسلنـــــــا</b><br /><br />
+                    <br />
+                    <label>إلى :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     @Html.TextBoxFor(model => model.to)                      <br /><br />
+                     <label>الموضوع :</label>
+                           @Html.TextBoxFor(model => model.subject)                    <br />
+                    <br />
+                    <label style="margin-right:-200px;"> الرسالة :</label>
+                    <br />
+                  @Html.TextBoxFor(model => model.body,new { rows="13", cols ="25"})                      <br />
+                    <input type="submit" value="إرســال" style="margin-top:28px;  height:48px; width:200px; border-radius:20px; margin-bottom:20px; background-color:white; color:cadetblue; font-weight:bold; border-color:white;" />
+                </h5>
+            </div>
+            <h1>@ViewBag.message</h1>
+        }
+    </div>
+    <footer class="navbar navbar-bottom myfooter" dir="ltr" style="margin-top:3400px;height:180px; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img src="~/Images/marafifoter.jpg" alt="logo" class="img-fluid" style="padding-top:50px; margin-top:-190px; margin-right:500px;">
+
+                </div>
+
+                <div class="col-md-6" style="margin-top:-100px; ">
+
+
+                    <h3>اتصل بنا</h3>
+                    <ul s class="footerlnk " style="list-style:none;   font-size:12px; direction:ltr">
+                        <li class="py-2 ">
+                            <span class="pr-1">092-7874767</span>
+                            <span class="icon"> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                        </li>
+                        <li class="py-2">
+                            <a src="https://marafy.ly/?fbclid=IwAR1ZDAJ-RZmz_nk0RlWLdRIDzOx_03WX4BEzVAMKeBLjkaiecRiezIrvVNY">
+                                <span class="pr-1">www.marafy.ly</span>
+                            </a>
+                            <i class="fa fa-fax" aria-hidden="true"></i>
+                        </li>
+                        <li class="py-2">
+                            <span class="pr-1"></span>
+                            <span class="icon"> <i aria-hidden="true"></i></span>
+                        </li>
+                        <li class="py-2">
+
+                            <span class="pr-1">info@marafy.ly</span>
+                            <span class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        </li>
+
+                        <li class="py-2">
+                            <a href="https://www.facebook.com/%D9%85%D8%B1%D8%A7%D9%81%D8%A6-%D9%84%D9%84%D8%B4%D8%AD%D9%86-%D9%88-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%84%D9%88%D8%AC%D8%B3%D8%AA%D9%8A%D8%A9-101417041785530" title="Facebook">
+                                <span class="pr-1">مرافئ للشحن و الخدمات اللوجستية</span>
+                            </a>
+
+
+
+                        </li>
+                    </ul>
+
+                    <div class="social-network social-circle" style="margin-top:20px;">
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
